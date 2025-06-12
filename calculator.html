@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tax Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="tax.png">
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">CorporateTax</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Tax Services</a>
+      <a href="calculator.html">Calculator</a>
+      <a href="resources.html">Resources</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="calculator">
+    <h2>Income Tax Calculator</h2>
+
+    <label>Business Revenue:</label>
+    <input type="number" id="revenue" placeholder="Enter revenue" />
+
+    <label>Expenses:</label>
+    <input type="number" id="expenses" placeholder="Enter expenses" />
+
+    <label>Deductions:</label>
+    <input type="number" id="deductions" placeholder="Enter deductions" />
+
+    <label>Tax Year:</label>
+    <select id="year">
+      <option value="2024">2024</option>
+      <option value="2023">2023</option>
+      <option value="2022">2022</option>
+    </select>
+
+    <label>Tax Regime:</label>
+    <select id="regime">
+      <option value="new">New Regime</option>
+      <option value="old">Old Regime</option>
+    </select>
+
+    <button onclick="calculateTax()">Calculate Tax</button>
+    <p id="result"></p>
+  </div>
+
+
+</body>
+
+</html>

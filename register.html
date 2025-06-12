@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Portal Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="tax.png">
+</head>
+
+<body>
+    <div id="RegistrationForm">
+        <div class="header">
+            <h1>Tax Portal Registration</h1>
+        </div>
+
+        <form action="login.html" method="GET">
+            <div class="name-group">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required placeholder="John">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required placeholder="Doe">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required placeholder="johndoe123">
+            </div>
+
+            <div class="form-group">
+                <label for="mobile">Mobile Number</label>
+                <input type="tel" id="mobile" name="mobile" required placeholder="+91xxxxx xxxxx">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email ID</label>
+                <input type="email" id="email" name="email" required placeholder="john@example.com">
+            </div>
+
+            <div class="form-group">
+                <label for="language">Preferred Language</label>
+                <select id="language" name="language">
+                    <option value="english">English</option>
+                    <option value="tamil">Tamil</option>
+                    <option value="malayalam">Malayalam</option>
+                    <option value="hindi">Hindi</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="otp">OTP Verification</label>
+                <div class="otp-group">
+                    <input type="text" id="otp" name="otp" placeholder="Enter 6-digit OTP" required>
+                    <button type="button">Get OTP</button>
+                </div>
+            </div>
+
+            <div class="password-group">
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="••••••••">
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="••••••••">
+                </div>
+            </div>
+
+            <button type="submit">Register Account</button>
+
+            <div class="footer">
+                Already have an account? <a href="login.html">Sign In</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
